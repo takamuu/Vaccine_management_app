@@ -17,6 +17,16 @@ group :development, :test do
 end
 
 group :development do
+  # Rails用のテストフレームワーク
+  gem 'rspec-rails'
+  # モデルに関するテストデータ作成用
+  gem 'factory_bot_rails'
+  # ダミーデータの生成
+  gem 'faker'
+  # デバッグ用
+  gem 'pry-byebug'
+  gem 'pry-doc'
+  
   gem 'web-console', '>= 4.1.0'
   gem 'rack-mini-profiler', '~> 2.0'
   gem 'listen', '~> 3.3'
